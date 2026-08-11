@@ -1,0 +1,20 @@
+{
+  "description": "SHA256 checksums for results directory (v10 audit phase 5). All result-data code replaced with reproducible training methods. No hardcoded metrics. Evaluation pipeline (test->evaluate->aggregate) fully connected.",
+  "files": {
+    "SSDD_annotation_version_note.txt": "047eaacae4f15ff55ac6b976ea1b88873b8ce44602bd9f83fa9a7aa59de86769",
+    "configuration_reuse_map.json": "ee0ce5bdadd2384330f5ae1d0c0ab12b4cd400ad174d6b60a5893cae229a5278",
+    "reproduce_experiments.py": "717d9c9c0798cfc840111a0eeae4e7ec53faacdddb1141629323597a5f267b0b",
+    "scene_sensor_slice_map.json": "fbfda1ea1f8bac74b67bd98de4f2c0bbc05472e6e26d274d2b1c7ce4aad00b90",
+    "ssdd_scene_split_8160.csv": "9b4d4e1ade5bff3d48bd5508744e14c00fb677fa2641bee08ee5fbaef1d159d1",
+    "audit_scene_provenance.py": "pending-sha256-update"
+  },
+  "metadata": {
+    "paper_sha256": "135A8D28A8D8CB7974DD685F3863C4B23CE63F323AF479F40F15252C2287BE45",
+    "paper_file": "SOBB_revised_cox.tex",
+    "generation_tool": "patch_v10_phase5.py",
+    "newline_rule": "LF (Unix-style) for all CSV/JSON files",
+    "checksum_algorithm": "SHA-256",
+    "phase": "5",
+    "notes": "Pre-computed experimental result CSV files have been removed. They are replaced by results/reproduce_experiments.py, which provides training commands to reproduce all paper experiments. configuration_reuse_map.json now maps experiment IDs to config files and training commands only -- no expected metric values. Structural metadata files (scene_sensor_slice_map.json, ssdd_scene_split_8160.csv, SSDD_annotation_version_note.txt) are retained as they contain no experimental results. audit_scene_provenance.py added for C6 scene provenance verification."
+  }
+}

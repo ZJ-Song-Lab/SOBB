@@ -1,0 +1,335 @@
+{
+  "description": "Mapping from (dataset, scene_id) to sensor sources, slice counts, and verifiable provenance fields. Fields original_filename, parent_scene_id, chip_coords, acquisition_date, and sha256 are populated by running results/audit_scene_provenance.py against the actual dataset files. Until that script is run, they remain null.",
+  "datasets": {
+    "SSDD": {
+      "sensor": "Mixed (RADARSAT-2, Sentinel-1, Gaofen-3, TerraSAR-X)",
+      "source_dir": "Official-SSDD-OPEN/RBox_SSDD/voc_style",
+      "total_images": 1160,
+      "scenes": {
+        "scene_01": {
+          "split": "train",
+          "n_slices": 106,
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_02": {
+          "split": "train",
+          "n_slices": 106,
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_03": {
+          "split": "train",
+          "n_slices": 106,
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_04": {
+          "split": "train",
+          "n_slices": 106,
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_05": {
+          "split": "train",
+          "n_slices": 106,
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_06": {
+          "split": "train",
+          "n_slices": 106,
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_07": {
+          "split": "train",
+          "n_slices": 106,
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_08": {
+          "split": "val",
+          "n_slices": 93,
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_09": {
+          "split": "val",
+          "n_slices": 93,
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_10": {
+          "split": "test",
+          "n_slices": 116,
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_11": {
+          "split": "test",
+          "n_slices": 116,
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        }
+      },
+      "sensor_note": "SSDD contains scenes from multiple SAR sensors. The sensor per scene must be verified from annotation metadata. Previous labeling as entirely RADARSAT-2 was incorrect.",
+      "official_total_source_scenes": 16
+    },
+    "RSDD": {
+      "sensor_primary": "Gaofen-3",
+      "sensor_secondary": "TerraSAR-X",
+      "source_dir": "RSDD/raw",
+      "total_images": 7000,
+      "scenes": {
+        "scene_01": {
+          "split": "train",
+          "n_slices": 400,
+          "sensor": "Gaofen-3",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_02": {
+          "split": "train",
+          "n_slices": 400,
+          "sensor": "Gaofen-3",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_03": {
+          "split": "train",
+          "n_slices": 400,
+          "sensor": "Gaofen-3",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_04": {
+          "split": "train",
+          "n_slices": 400,
+          "sensor": "Gaofen-3",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_05": {
+          "split": "train",
+          "n_slices": 400,
+          "sensor": "Gaofen-3",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_06": {
+          "split": "train",
+          "n_slices": 400,
+          "sensor": "Gaofen-3",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_07": {
+          "split": "train",
+          "n_slices": 400,
+          "sensor": "Gaofen-3",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_08": {
+          "split": "train",
+          "n_slices": 400,
+          "sensor": "Gaofen-3",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_09": {
+          "split": "train",
+          "n_slices": 400,
+          "sensor": "TerraSAR-X",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_10": {
+          "split": "train",
+          "n_slices": 400,
+          "sensor": "TerraSAR-X",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_11": {
+          "split": "val",
+          "n_slices": 500,
+          "sensor": "TerraSAR-X",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_12": {
+          "split": "val",
+          "n_slices": 500,
+          "sensor": "TerraSAR-X",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_13": {
+          "split": "test",
+          "n_slices": 667,
+          "sensor": "TerraSAR-X",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_14": {
+          "split": "test",
+          "n_slices": 667,
+          "sensor": "TerraSAR-X",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        },
+        "scene_15": {
+          "split": "test",
+          "n_slices": 666,
+          "sensor": "TerraSAR-X",
+          "original_filename": null,
+          "parent_scene_id": null,
+          "chip_coords": null,
+          "acquisition_date": null,
+          "sha256": null,
+          "sensor_verified": false
+        }
+      },
+      "sensor_note": "RSDD groups 127 official source scenes (84 GF-3 + 41 TerraSAR-X + 2 large) into 15 groups. The sensor per group is a majority label and must be verified. Previous labeling of all val/test scenes as TerraSAR-X was incorrect.",
+      "official_total_source_scenes": 127
+    }
+  },
+  "official_sources": {
+    "SSDD": {
+      "url": "https://github.com/TinaXDD/SSDD",
+      "paper": "Li et al., MDPI Remote Sensing 13(18):3690, 2021",
+      "total_source_scenes": "16 SAR scenes (RADARSAT-2, Sentinel-1, Gaofen-3, TerraSAR-X)",
+      "official_split_rule": "Official train/val/test split as published; our scene-disjoint split is supplementary",
+      "note": "SSDD is NOT entirely RADARSAT-2. The official release mixes multiple SAR sensors. Each scene's sensor must be verified from the original annotation metadata."
+    },
+    "RSDD": {
+      "url": "https://radars.ac.cn/en/article/doi/10.12000/JR22007",
+      "paper": "Zhang et al., Journal of Radars, 2022",
+      "total_source_scenes": "84 GF-3 scenes + 41 TerraSAR-X scenes + 2 large images = 127 source scenes",
+      "official_split_rule": "Official test protocol for fair comparison (MDPI Remote Sensing 13(18):3690)",
+      "note": "RSDD val/test are NOT entirely TerraSAR-X. The 15 grouped scenes map to 127 official source scenes; the grouping and sensor assignment must be verified."
+    }
+  },
+  "verification_schema": {
+    "per_scene_fields": {
+      "original_filename": "Original TIFF/SLC filename from the official release (string, null until audited)",
+      "parent_scene_id": "Official source scene/product identifier (string, null until audited)",
+      "chip_coords": "[x, y, width, height] of the chip within the parent scene (list, null until audited)",
+      "acquisition_date": "SAR acquisition date YYYY-MM-DD (string, null until audited)",
+      "sha256": "SHA-256 checksum of the original image file (string, null until audited)",
+      "sensor_verified": "Whether the sensor was confirmed from annotation metadata (bool, false until audited)"
+    },
+    "audit_script": "results/audit_scene_provenance.py",
+    "audit_instructions": [
+      "1. Download the official SSDD and RSDD datasets",
+      "2. Run: python results/audit_scene_provenance.py --ssdd-dir <path> --rsdd-dir <path>",
+      "3. The script computes SHA-256 for every image, extracts chip coordinates,",
+      "   verifies sensor assignments, and writes the populated map to",
+      "   results/scene_sensor_slice_map_audited.json",
+      "4. Cross-check: no two chips from different splits should overlap by >50%",
+      "5. Report any sensor mislabeling or inter-split overlap"
+    ]
+  }
+}

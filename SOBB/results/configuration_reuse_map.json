@@ -1,0 +1,114 @@
+{
+  "schema_version": "5.0",
+  "description": "Configuration reuse map: maps paper experiment IDs to config files and training commands. Contains NO pre-computed result values -- all metrics must be obtained by running the training commands.",
+  "mappings": [
+    {
+      "paper_id": "R01",
+      "config": "projects/s2anet/configs/ablations/r01_gt_bce_ssdd.py",
+      "model": "GT-candidate independent BCE",
+      "dataset": "SSDD",
+      "paper_table": "Table 1, row 1",
+      "train_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r01_gt_bce_ssdd.py --seed {1,2,3,4,5}",
+      "eval_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r01_gt_bce_ssdd.py --eval --checkpoint latest"
+    },
+    {
+      "paper_id": "R02",
+      "config": "projects/s2anet/configs/ablations/r02_pred_aligned_ssdd.py",
+      "model": "Prediction-aligned calibration",
+      "dataset": "SSDD",
+      "paper_table": "Table 1, row 2",
+      "train_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r02_pred_aligned_ssdd.py --seed {1,2,3,4,5}",
+      "eval_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r02_pred_aligned_ssdd.py --eval --checkpoint latest"
+    },
+    {
+      "paper_id": "R03",
+      "config": "projects/s2anet/configs/ablations/r03_pairwise_ssdd.py",
+      "model": "Pairwise scoring",
+      "dataset": "SSDD",
+      "paper_table": "Table 1, row 3",
+      "train_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r03_pairwise_ssdd.py --seed {1,2,3,4,5}",
+      "eval_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r03_pairwise_ssdd.py --eval --checkpoint latest"
+    },
+    {
+      "paper_id": "R04",
+      "config": "projects/s2anet/configs/ablations/r04_risk_aware_ssdd.py",
+      "model": "Risk-aware, scorer-only (CORE)",
+      "dataset": "SSDD",
+      "paper_table": "Table 1, bold row",
+      "train_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r04_risk_aware_ssdd.py --seed {1,2,3,4,5}",
+      "eval_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r04_risk_aware_ssdd.py --eval --checkpoint latest"
+    },
+    {
+      "paper_id": "R05",
+      "config": "projects/s2anet/configs/ablations/r05_feature_joint_ssdd.py",
+      "model": "Risk-aware, feature-joint",
+      "dataset": "SSDD",
+      "paper_table": "Table 1, row 5",
+      "train_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r05_feature_joint_ssdd.py --seed {1,2,3,4,5}",
+      "eval_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r05_feature_joint_ssdd.py --eval --checkpoint latest"
+    },
+    {
+      "paper_id": "R06",
+      "config": "projects/s2anet/configs/ablations/r06_fully_joint_ssdd.py",
+      "model": "Risk-aware, fully joint",
+      "dataset": "SSDD",
+      "paper_table": "Table 1, row 6",
+      "train_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r06_fully_joint_ssdd.py --seed {1,2,3,4,5}",
+      "eval_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r06_fully_joint_ssdd.py --eval --checkpoint latest"
+    },
+    {
+      "paper_id": "R07",
+      "config": "projects/s2anet/configs/ablations/r07_consistency_ssdd.py",
+      "model": "Risk-aware + consistency",
+      "dataset": "SSDD",
+      "paper_table": "Table 1, last row",
+      "train_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r07_consistency_ssdd.py --seed {1,2,3,4,5}",
+      "eval_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/ablations/r07_consistency_ssdd.py --eval --checkpoint latest"
+    },
+    {
+      "paper_id": "F02/X17",
+      "config": "projects/s2anet/configs/roitransformer_r50_fpn_1x_ssdd.py",
+      "model": "SOBB+DSOF+SALA (full risk-aware, two-stage)",
+      "dataset": "SSDD (RBox)",
+      "paper_table": "Table 6, Ours-Two",
+      "train_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/roitransformer_r50_fpn_1x_ssdd.py --seed {1,2,3,4,5}",
+      "eval_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/roitransformer_r50_fpn_1x_ssdd.py --eval --checkpoint latest"
+    },
+    {
+      "paper_id": "F03/X18",
+      "config": "projects/s2anet/configs/roitransformer_r50_fpn_1x_rsdd.py",
+      "model": "SOBB+DSOF+SALA (full risk-aware, two-stage)",
+      "dataset": "RSDD",
+      "paper_table": "Table 7, Ours-Two",
+      "train_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/roitransformer_r50_fpn_1x_rsdd.py --seed {1,2,3,4,5}",
+      "eval_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/roitransformer_r50_fpn_1x_rsdd.py --eval --checkpoint latest"
+    },
+    {
+      "paper_id": "F04",
+      "config": "projects/s2anet/configs/s2anet_r50_fpn_1x_ssdd.py",
+      "model": "SOBB+DSOF+SALA (full risk-aware, single-stage)",
+      "dataset": "SSDD (RBox)",
+      "paper_table": "Table 6, Ours-Single",
+      "train_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/s2anet_r50_fpn_1x_ssdd.py --seed {1,2,3,4,5}",
+      "eval_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/s2anet_r50_fpn_1x_ssdd.py --eval --checkpoint latest"
+    },
+    {
+      "paper_id": "F05",
+      "config": "projects/s2anet/configs/s2anet_r50_fpn_1x_rsdd.py",
+      "model": "SOBB+DSOF+SALA (full risk-aware, single-stage)",
+      "dataset": "RSDD",
+      "paper_table": "Table 7, Ours-Single",
+      "train_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/s2anet_r50_fpn_1x_rsdd.py --seed {1,2,3,4,5}",
+      "eval_cmd": "python tools/run_net.py --config-file projects/s2anet/configs/s2anet_r50_fpn_1x_rsdd.py --eval --checkpoint latest"
+    }
+  ],
+  "notes": [
+    "Ablation configs are in projects/s2anet/configs/ablations/",
+    "Run each with --seed {1,2,3,4,5} for five-seed experiments",
+    "scorer_mode: 'scorer_only' (detach both), 'feature_joint' (detach candidates only), 'fully_joint' (no detach)",
+    "lambda_cons > 0 requires perturbed second-view data pipeline support",
+    "Checkpoints must be generated by actual training runs",
+    "See results/reproduce_experiments.py for full training command catalog",
+    "This map contains NO pre-computed result values -- run training to obtain metrics"
+  ]
+}

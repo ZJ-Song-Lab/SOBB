@@ -1,0 +1,17 @@
+SSDD Annotation Version Clarification
+=====================================
+
+The paper uses RBox_SSDD (rotated bounding box annotations), NOT BBox_SSDD (horizontal).
+- BBox_SSDD/voc_style : horizontal box version (used only for the single-stage HBB baseline X01/F00)
+- RBox_SSDD           : rotated box version (used for all two-stage SOBB experiments X17/F02, X09/F10)
+- SSDD+               : RBox_SSDD with the 7-param SOBB coder; required for angle continuity,
+                        candidate switching and the rotated-box precision experiments.
+
+The default ssdd_preprocess_config.py points at BBox_SSDD/voc_style for the HBB single-stage
+baseline only. All two-stage results in the main tables are produced with ssdd_plus_preprocess_config.py
+which reads RBox_SSDD rotated annotations. ssdd_to_dota.py converts RBox_SSDD to DOTA-style
+polylons preserving the rotation angle (not axis-aligned quadrilaterals).
+
+A scene-level split manifest (8,160 lines) is provided in ssdd_scene_split_8160.csv.
+It maps every SAR slice to its parent scene, sensor, and train/val/test split so that
+no scene contributes slices to more than one split (no source leakage).
